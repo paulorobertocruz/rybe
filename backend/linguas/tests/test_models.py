@@ -12,3 +12,8 @@ class LinguaModelTestCase(TestCase):
         lingua = Lingua.objects.get(codigo='codigo')
         codigo_label = lingua._meta.get_field('codigo').verbose_name
         self.assertEquals(codigo_label, 'codigo')
+
+    def test_descricao_label(self):
+        lingua = Lingua.objects.get(codigo='codigo')
+        descricao_label = lingua._meta.get_field('descricao').verbose_name
+        self.assertEquals(descricao_label, 'descricao')
