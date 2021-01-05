@@ -1,3 +1,6 @@
 from django.db import models
 
-# Create your models here.
+
+class Lingua(models.Model):
+    codigo = models.SlugField(primary_key=True)
+    descricao = models.CharField(max_length=255)
