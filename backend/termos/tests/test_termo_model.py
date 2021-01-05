@@ -13,3 +13,4 @@ class TermoModelTestCase(TestCase):
     def test_lingua_label(self):
         termo = Termo.objects.get(id=1)
         lingua_label = termo._meta.get_field('lingua').verbose_name
+        self.assertEquals(lingua_label, 'lingua')
