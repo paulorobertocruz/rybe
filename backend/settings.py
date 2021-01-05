@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'linguas.apps.LinguasConfig',
+    'termos.apps.TermosConfig',
 ]
 
 MIDDLEWARE = [
